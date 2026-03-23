@@ -9,15 +9,64 @@
 <body>
   <div class="contenedor">
     <h2>FORMULARIO ESTUDIANTIL</h2>
-    <h2>CURSO: 2DO SECUNDARIA</h2>
-    <h2>Llenar los siguientes datos para la actualización de folder:</h2>
+    <h2>CURSO: 3RO SECUNDARIA</h2>
+    <h2>Llenar los siguientes datos para la actualización de kardex(folder):</h2>
     <form id="formulario">
-      <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
-      <input type="tel" id="celular_padre" name="celular_padre" placeholder="Celular del padre" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" />
-      <input type="tel" id="celular_madre" name="celular_madre" placeholder="Celular de la madre" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" />
-      <input type="tel" id="celular_tutor" name="celular_tutor" placeholder="Celular del tutor" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" />
-      <input type="tel" id="celular_estudiante" name="celular_estudiante" placeholder="Celular del estudiante" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" />      
+      <label for="nombre">Nombre completo:</label>
+      <select id="nombre" name="nombre" required>
+        <option value="">Seleccione un nombre</option>
+
+        <option>ALI MAMANI ASCENCIO</option>
+        <option>CALATAYUD YUJRA BRENDA MAYTE</option>
+        <option>CHINO COYO GENESIS CECILIA</option>
+        <option>CHOQUE APAZA ALEX WILDER</option>
+        <option>CORINA QUISPE JUAN FERNANDO</option>
+        <option>CUTIPA ESPEJO CRISTIAN ELVIS</option>
+        <option>ESPEJO ALANOCA KEYLA ALEIDIS</option>
+        <option>FLORES HUMEREZ JASIEL NOEMI</option>
+        <option>FLORES VARGAS MIGUEL ANGEL</option>
+        <option>GARCIA GARCIA GABRIEL KEVIN</option>
+        <option>GONZALES ROSAS RICARDO</option>
+        <option>GUARACHI LIMACHI FABRICIO DANIEL</option>
+        <option>GUARACHI MARTINEZ ZOEY SUMAYA</option>
+        <option>IRAIPI MORALES FRANK REINALDO</option>
+        <option>KENAPP FLORES JOSE DAVID</option>
+        <option>LUNA MERLO KEVIN PATRICIO</option>
+        <option>MAMANI HUANCA JHENNY YOSELIN</option>
+        <option>MAYTA MAMANI JUAN RODRIGO</option>
+        <option>POMA QUISPE JULIAN NEYMAR</option>
+        <option>QUISPE CARRILLO GUADALUPE TATIANA</option>
+        <option>QUISPE PAUCARA DRAKE NOLAND</option>
+        <option>QUISPE QUISPE LEIDY FLORA</option>
+        <option>RAMIREZ VARGAS KEVIN</option>
+        <option>SANCHEZ PAUCARA EMILI CLARA</option>
+        <option>TAPIA SEJAS AARON JUSTINIANO</option>
+        <option>TICONA LIMA ANGELA MASHIEL</option>
+        <option>VALVERDE SANCHEZ VICTOR FERNANDO</option>
+        <option>YUJRA SIRPA DELIA</option>
+        <option>ZACARI PAUCARA LESLIE MAYLI</option>
+        <option>ZAMBRANA OMONTE JOSE ANTONIO</option>
+
+      </select>
+
+      <label for="celular_estudiante">Nro celular del Estudiante:</label>
+      <input type="tel" id="celular_estudiante" name="celular_estudiante"
+      placeholder="Ej: 71234567" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required />
+
+      <label for="celular_padre">Nro celular del Padre, Madre o tutor del estudiante:</label>
+      <input type="tel" id="celular_padre" name="celular_padre"
+      placeholder="Ej: 71234567" maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required />
+
+      <label for="direccion">Dirección actual:</label>
+      <input type="text" id="direccion" name="direccion"
+      placeholder="Zona, calle, referencia" required />
+
+      <label for="numero_vivienda">Nro de la vivienda:</label>
+      <input type="text" id="numero_vivienda" name="numero_vivienda"
+      placeholder="Ej: 123, S/N, Lote 5" required />
+
       <button type="submit">Enviar</button>
+
     </form>
     <div id="modal" class="modal">
       <div class="modal-contenido">
